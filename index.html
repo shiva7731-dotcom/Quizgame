@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2026 Sports & Current Affairs Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Start Screen -->
+      <div id="start-screen" class="screen active">
+        <div class="glow-icon">🌍🏆</div>
+        <h1>2026 Mastermind</h1>
+        <p>
+          Test your knowledge on this year's biggest sports events and global
+          affairs!
+        </p>
+        <button id="start-btn" class="primary-btn">Start Quiz</button>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quiz-screen" class="screen">
+        <div class="quiz-header">
+          <div class="progress-container">
+            <span id="question-tracker">Question 1/7</span>
+            <div class="progress-bar">
+              <div id="progress-fill"></div>
+            </div>
+          </div>
+          <div class="timer-box"><span id="timer">15</span>s</div>
+        </div>
+
+        <div class="question-container">
+          <h2 id="question-text">Question goes here?</h2>
+          <div id="options-grid" class="options-grid">
+            <!-- Buttons injected via JS -->
+          </div>
+        </div>
+
+        <!-- Fun fact box that appears after answering -->
+        <div id="fact-box" class="fact-box hide">
+          <h3>💡 Did you know?</h3>
+          <p id="fact-text">Fact goes here.</p>
+        </div>
+
+        <button id="next-btn" class="primary-btn hide">Next Question ➔</button>
+      </div>
+
+      <!-- Result Screen -->
+      <div id="result-screen" class="screen">
+        <h1 id="result-title">Quiz Complete!</h1>
+        <div class="score-display">
+          <span id="score-text">0</span> / <span id="total-text">7</span>
+        </div>
+        <p id="result-message">Let's see if you can do better.</p>
+        <button id="restart-btn" class="primary-btn">Play Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- https://docs.google.com/forms/d/e/1FAIpQLSckArN9E2RB7jHPCmTVuRi5opVWWdjR9KYwnUfGDs8W7nou6A/viewform?usp=sf_link -->
